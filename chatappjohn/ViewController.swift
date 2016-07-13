@@ -8,10 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+class ViewController: UIViewController {
+        override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //back endless test (user test)
+        let backendless = Backendless.sharedInstance()
+        let user: BackendlessUser = BackendlessUser()
+        user.email = "us4john@gmail.com"
+        user.password = "apple1515"
+        backendless.userService.registering(user)
+        
+        
+    
+        
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
