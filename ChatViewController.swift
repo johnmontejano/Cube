@@ -6,8 +6,14 @@
 //  Copyright © 2016 John Montejano. All rights reserved.
 //
 
-import Cocoa
+import UIKit
+import JSQMessagesViewController
 
 class ChatViewController: UIViewController {
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }

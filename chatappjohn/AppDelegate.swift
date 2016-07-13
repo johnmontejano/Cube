@@ -8,14 +8,48 @@
 
 import UIKit
 import CoreData
+import FirebaseDatabase
+import Firebase
+import CoreLocation
+import IDMPhotoBrowser
+import JSQMessagesViewController
+import ProgressHUD
+
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    // FAKE APP_ID
+//    let APP_ID = "My APP_ID"
+    
+    // FAKE SECRET_KEY
+//    let SECRET_KEY = "My SECRET_KEY"
+    
+    /*
+    My APP_ID and SECRET_KEY are private
+    Please email us4john@gmail.com if you want them
+    */
+    
+   
+    
+    let VERSION_NUM = "v1"
+    
+    
+    
+    
+    
+    var backendless = Backendless.sharedInstance()
+    
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        backendless.initApp(APP_ID, secret:SECRET_KEY, version:VERSION_NUM)
+        
+        FIRApp.configure()
+        
+        FIRDatabase.database().persistenceEnabled = true
         // Override point for customization after application launch.
         return true
     }
