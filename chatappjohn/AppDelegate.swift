@@ -30,7 +30,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     My APP_ID and SECRET_KEY are private
     Please email us4john@gmail.com if you want them
     */
+    //chatAppJohn
     
+    let APP_ID = "7C6B9912-4E9D-61C0-FF97-F72C131B3F00"
+    
+    let SECRET_KEY = "47C45970-8BC1-F74B-FF7D-C67580FFEB00"
    
     
     let VERSION_NUM = "v1"
